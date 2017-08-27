@@ -14,12 +14,13 @@ import javax.swing.JLabel;
  */
 public class HelloWorld extends JFrame{
     public HelloWorld() {
-        setSize(200, 150);
-        setVisible(true);
-        setLocation(500, 300);
-        setResizable(false);
-        JLabel label = new JLabel("Hello World");
-        add(label);
+        setSize(200, 150); // Tạo JFrame
+        setVisible(true); // Hiển thị JFrame
+        setLocation(500, 300); // Vị trí JFrame hiển thị
+        setResizable(false); // Tắt tùy chỉnh size JFrame
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Tắt chương trình khi đóng JFrame
+        JLabel label = new JLabel("Hello World"); // Tạo label
+        add(label); // Thêm label vào JFrame
     }
     
     public static void main(String[] args) {
